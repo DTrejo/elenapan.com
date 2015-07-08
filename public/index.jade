@@ -1,0 +1,113 @@
+extends ./__layout.jade
+
+prepend jadejs
+  - var bodyclass = "homepage"
+
+append styles
+  style.
+    .headshot {
+      border-radius: 160px;
+      margin-left: 1rem;
+      float: right;
+      display: inline;
+    }
+
+block header
+  header
+    h1
+      a(href="/"): | Elena Pan Property Management
+
+    p
+      img(class="headshot" src="/images/elena-pan-property-manager.png"  alt="Photo of Elena Pan, property manager" height="160" width="160")
+      | I help owners of apartment complexes with 1000+ residents turn bad quality residents into high quality residents.
+      br
+      | &mdash;&nbsp;Elena Pan, property manager
+
+block main
+  article
+    +md
+
+mixin md
+  :markdown
+    # Have unhappy, hard to deal with tenants?
+
+    ## Our work together will turn them into happy, easy to deal with tenants.
+
+    ## Does this sound like you?
+
+    - You are a Sacramento-bay area, property owner of multiple complexes with over 1000 residents in a college town.
+
+    - You prefer not to interact with residents and you run your business mostly on paper.
+
+    ## Unhappy, hard to deal with tenants are driving you crazy in all these ways:
+
+    - Helicopter parents that want everything perfect for their little angel and are constantly pestering you.
+
+    - Tenants and parents are threatening you to sue or contact HOA or posting a poor review.
+
+    - Tenants are complaining to you that there are break-ins and feel unsafe.
+
+    - Tenants complaining to you about their leaky toilets and faucets and won't pay you rent until the issue(s) are resolved.
+
+    - You are tired of handling residents who are neglecting to pay rent on time because they are waiting to find a job or get financial aid.
+
+    - Know-it-all tenants that try to tell you how to do your job (fire safety, etc.).
+
+    - Tenants are calling you about roaches, ants, rats, mice, bed bugs, and spiders.
+
+
+    ## My name is Elena Pan. As a property manager, I help apartment complex owners with 1000+ tenants turn bad quality residents into high quality residents.
+
+    ## Frequent Asked Questions
+
+    - "What if I already have a property manager handling these issues?"
+
+      - If you're still having these problems, perhaps your property manager is overwhelmed and can use my additional help or information to address these issues.
+
+    - "What if I already have happy tenants?"
+
+      - This means that we can work other things- perhaps raising quality of life and therefore having even happier tenants, so you can earn more rent. Maybe your rent is too low considering the quality of work you're doing.
+
+    - "What if I don't have 1000+ residents?"
+
+      - These strategies work well for any size complex.
+
+    - "What if most of my tenants are not college students?"
+
+      - I am confident that we can tailor these strategies to you and your tenants.
+
+    - "Why should I trust you to get this done?"
+
+      I made the following impact on 5th Avenues Real Estate Services complexes:
+
+      - Oversaw 192 apartment units with over 1,000 residents and managed 20 staff members.
+
+      - Led host-beneficiary partnerships with church groups to land over 300 high quality tenants.
+
+      - Lowered rent delinquency 50% compared to the previous year and maintained 100% occupancy.
+
+      - Condensed leasing period from four months to three weeks.
+
+      - Boosted the retention rate by ~10% to 70%.
+
+      - Operated the front desk while hitting tight deadlines for multiple projects.
+
+      - Calmed upset parents and tenants by resolving their issues, turning unhappy tenants into ideal tenants.&nbsp;
+
+      - Promoted to full-time operations manager over 20 other seasonal staff.
+
+
+    ## "What if we don't work well together or this takes too long or this is ineffective?"
+
+    We can do an evaluation at the one-month mark and if you feel like this isn't for you, we can stop working together at no cost to you.
+
+
+    ## Why do I love this work? I used to be an unhappy tenant
+
+    As a former unhappy tenant I discovered the real reasons why tenants are unhappy and used these discoveries during my time as a property manager to create happy tenants—it is a beautiful coincidence that my quest for happy tenants makes great business sense for owners.
+
+    ## Let's fix your low-quality tenant problem.
+
+    Email me, Elena Pan, at <code>epan&nbsp;a&#116;&nbsp;ucdavis.edu</code>. These problems fascinate me—even if you're not interested in working together, I'd love to hear from you.
+
+    [1]: http://localhost:9000/mailto:epan@ucdavis.edu
